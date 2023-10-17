@@ -2,18 +2,20 @@
 
 /**
  * print_string - Print string
- * @list: list.
- *
- * Return: String length.
+ * @args: numberof arguements
+ * @printed: the printed characters
+ * Return: printed charcaters
  */
 
-int print_string(va_list list)
+int printf_string(va_list args, int printed)
 {
-	char *p;
-	int p_len;
+	char *string = va_arg(args, char *);
 
-	p = va_arg(list, char*);
-	p_len = print((p != NULL) ? p : "(null)");
-
-	return (p_len);/*return statement*/
+	while (*string != '\0')
+	{
+		_putchar(*string);
+		printed++;
+		string++;
+	}
+	return (printed);/*return statement*/
 }
