@@ -16,7 +16,6 @@ int _printf(const char *, ...);
 /* handler.c */
 int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
-int selector(const char *format, va_list args, int printed);
 
 /* printers */
 int print_string(va_list);
