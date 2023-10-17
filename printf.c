@@ -8,27 +8,21 @@
  **/
 int _printf(const char *format, ...)
 {
-	int printed = 0;
-
+	int size;
 	va_list args;
 
-	va_start(args, format);
+	if (format == NULL)
+		return (-1);
 
-	while (*format != '\0')
-	{
-		if (*format == '%')
-		{
-			format++;
-			printed = selector(format, args, printed);
-			format++;
-		}
-		else
-		{
-			_putchar(*format);
-			printed++;
-			format++;
-		}
-	}
+	size = _strlen(format);
+	if (size <= 0)
+		return (0);
+
+	va_start(args, format);
+	size = handler(format, args);
+
+	_putchar(-1);
 	va_end(args);
-	return (printed);
+
+	return (size);/*return*/
 }
