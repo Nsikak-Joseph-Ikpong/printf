@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-/*headers*/
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
@@ -18,7 +18,7 @@ int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
 
 /* printers */
-int print_string(va_list list);
+int print_string(va_list);
 int print_char(va_list);
 int print_integer(va_list);
 int print_binary(va_list);
@@ -47,4 +47,4 @@ typedef struct _format
 } format;
 
 
-#endif /* end of MAIN_H*/
+#endif /* MAIN_H */

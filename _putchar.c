@@ -3,6 +3,7 @@
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
+ *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -14,6 +15,7 @@ int _putchar(char c)
 /**
  * buffer - Save the character in a buffer
  * @c: Character
+ *
  * Return: 1
  **/
 int buffer(char c)
@@ -30,5 +32,5 @@ int buffer(char c)
 	if (c != -1)
 		buffering[i++] = c;
 
-	return (1);/*return statement*/
+	return (1);/*Return Statement*/
 }

@@ -76,5 +76,5 @@ int percent_handler(const char *str, va_list list, int *i)
 
 	_putchar('%'), _putchar(str[*i]);
 
-	return (2);/*Return Statement*/
+	return (2);/*RESULT STATEMENT*/
 }

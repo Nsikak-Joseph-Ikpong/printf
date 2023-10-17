@@ -49,5 +49,5 @@ char *string_to_upper(char *s)
 		}
 	}
 
-	return (s);/*return statement*/
+	return (s);/*Return Statement*/
 }

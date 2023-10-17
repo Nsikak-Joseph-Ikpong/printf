@@ -1,7 +1,10 @@
 #include "main.h"
+
+
 /**
  * _strlen - Calculate the length of a string
  * @str: String
+ *
  * Return: Length
  **/
 int _strlen(const char *str)
@@ -17,6 +20,7 @@ int _strlen(const char *str)
 /**
  * print - print char.
  * @str: string.
+ *
  * Return: string length.
  */
 
@@ -27,5 +31,5 @@ int print(char *str)
 	for (i = 0; str[i] != '\0'; ++i)
 		_putchar(str[i]);
 
-	return (i);/* return statemnet*/
+	return (i);/* Return Statemnet*/
 }

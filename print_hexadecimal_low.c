@@ -3,6 +3,7 @@
 /**
  * print_hexadecimal_low - Print a number in hexadecimal format
  * @list: Number to print
+ *
  * Return: Length of the number
  **/
 int print_hexadecimal_low(va_list list)
@@ -14,5 +15,5 @@ int print_hexadecimal_low(va_list list)
 
 	size = print((p_buff != NULL) ? p_buff : "NULL");
 
-	return (size);/* return statement*/
+	return (size);/*Return Statement*/
 }

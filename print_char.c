@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * print_char - print characters
+ * print_char - print char.
  * @list: va_list.
+ *
  * Return: 1
  */
 int print_char(va_list list)
@@ -12,5 +13,5 @@ int print_char(va_list list)
 
 	_putchar(aux);
 
-	return (1);//end statement
+	return (1);/*Return Statement*/
 }

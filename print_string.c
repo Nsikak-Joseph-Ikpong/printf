@@ -15,5 +15,5 @@ int print_string(va_list list)
 	p = va_arg(list, char*);
 	p_len = print((p != NULL) ? p : "(null)");
 
-	return (p_len);/*return statement*/
+	return (p_len);/*Return Statement*/
 }
