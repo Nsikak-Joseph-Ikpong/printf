@@ -4,6 +4,7 @@
  * handler - Format controller
  * @str: String format
  * @list: List of arguments
+ *
  * Return: Total size of arguments with the total size of the base string
  **/
 int handler(const char *str, va_list list)
@@ -36,6 +37,7 @@ int handler(const char *str, va_list list)
  * @str: String format
  * @list: List of arguments
  * @i: Iterator
+ *
  * Return: Size of the numbers of elements printed
  **/
 int percent_handler(const char *str, va_list list, int *i)
@@ -74,5 +76,5 @@ int percent_handler(const char *str, va_list list, int *i)
 
 	_putchar('%'), _putchar(str[*i]);
 
-	return (2);/*return statement*/
+	return (2);/*Return Statement*/
 }
