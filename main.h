@@ -18,7 +18,7 @@ int handler(const char *, va_list);
 int percent_handler(const char *, va_list, int *);
 
 /* printers */
-int printf_string(va_list args, int printed);
+int print_string(va_list list);
 int print_char(va_list);
 int print_integer(va_list);
 int print_binary(va_list);
